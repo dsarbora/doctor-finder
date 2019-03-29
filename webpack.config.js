@@ -2,6 +2,8 @@
  const HtmlWebpackPlugin = require('html-webpack-plugin');
  const CleanWebpackPlugin = require('clean-webpack-plugin');
  const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+ const dotEnv = require('dotenv-webpack');
+
 
  module.exports = {
    entry: './src/main.js',
@@ -20,7 +22,8 @@
        title: 'Doctors',
        template: './src/index.html',
        inject: 'body'
-     })
+     }),
+     new dotEnv()
    ],
    module: {
      rules: [

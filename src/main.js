@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import './styles.css';
 
 $(document).ready(function() {
   $('#sicknessButton').click(function() {
@@ -16,11 +17,12 @@ $(document).ready(function() {
         }
         else{
           $('#result').text("");
-          for(var i=0; i<10; i++){
-            $('#result').append(`<h4>Name: ${response.data[i].profile.first_name} ${response.data[i].profile.last_name}</h4>
-                <h4>Address: ${response.data[0].practices[i].visit_address.street}</h4>
-                <h4>Phone: ${response.data[0].practices[i].phones[0].number}
-                <h4>Website: ${response.data[0].practices[i].website}
+          for(var i=1; i<10; i++){
+            $('#result').append(`<h2>Doctor ${i}</h2><h4>Name: ${response.data[i-1].profile.first_name} ${response.data[i-1].profile.last_name}</h4>
+                <h4>Address: ${response.data[i-1].practices[i-1].visit_address.street}</h4>
+                <h4>Phone: ${response.data[i-1].practices[i-1].phones[0].number}
+                <h4>Website: ${response.data[i-1].practices[i-1].website}</h4>
+                <h4>Accepting New Patients: ${response.data[i-1].practices[0].accepts_new_patients}</h4>
                 <hr>`);
           }
         }

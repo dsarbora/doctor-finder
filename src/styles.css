@@ -1,3 +1,9 @@
 body{
     background-color: #AAAAAA;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.btn{
+    border: 1px solid black;
 }

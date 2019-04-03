@@ -17,7 +17,7 @@ If the query response doesn't include any doctors (for instance, if no doctors m
 * _Download and install node.js and Node Package Manager._
 * _Navigate to the project directory in your command line._
 * _Use the command $ **npm install**_
-* _Use a web browser to navigate to []() and create an account to generate your own API key that will work with this program.
+* _Use a web browser to navigate to [https://api.betterdoctor.com/](https://api.betterdoctor.com/) and create an account to generate your own API key that will work with this program.
 * _Create a directory titled ".env" at the root level of this project, and in it include the line "exports.apiKey = {Copy and paste your API key here.}
 * _When necessary dependencies are finished loading, use the command $ **npm run build**_
 * _Finally, use the command $ **npm run start** to start the web server._

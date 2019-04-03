@@ -14,6 +14,9 @@ $(document).ready(function() {
         const response = JSON.parse(this.responseText);
         getElements(response);
       }
+      else{
+        $("#errors").text("Error " + this.status);
+      }
     };
 
     request.open("GET", url, true);

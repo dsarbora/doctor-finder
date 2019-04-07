@@ -1,8 +1,8 @@
-
+import $ from 'jquery';
 
 export function findDoctors(sickness){
   let request = new XMLHttpRequest();
-  const url = `https://api.betterdoctor.com/2016-03-01/doctors?query=${sickness}&location=or-portland&limit=10&user_key=${process.env.exports.apiKey}`;
+  const url = `https://api.betterdoctor.com/2016-03-01/doctors?query=${sickness}&location=wa-seattle&limit=10&user_key=${process.env.exports.apiKey}`;
   request.onreadystatechange = function(){
     if(this.readyState===4 && this.status===200){
       const response = JSON.parse(this.responseText);

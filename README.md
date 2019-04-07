@@ -5,7 +5,7 @@
 
 This application will take in your city and ailment, and search a list of doctors who can help you with a particular problem.
 
-## Specificiations
+## Specifications
 * A user will be able to enter a medical issue to receive a list of doctors in the Portland area that fit the search query.
 * A user will be able to to enter a name to receive a list of doctors in the Portland area that fit the search query.
 * If the query response includes any doctors, the following information will be included about each doctor: first name, last name, address, phone number, website and whether or not the doctor is accepting new patients (the API provides this data).
@@ -22,6 +22,12 @@ If the query response doesn't include any doctors (for instance, if no doctors m
 * _When necessary dependencies are finished loading, use the command $ **npm run build**_
 * _Finally, use the command $ **npm run start** to start the web server._
 
+## API Key
+* Visit the BetterDoctor API site and click “Get a free API key”.
+* Fill out the form, listing Epicodus as the Organization/Company Name.
+* Your API key should be listed on the front page (ex: “a2c356ibgh44…..”)   or under My Account > Applications.
+* Create a file in the root level of your directory called ".env"
+* In .env, store your API key as "exports.apiKey = {Your API Key Here}"
 
 ## Known Bugs
 * Whether or not the information appearing on the screen actually represents an accurate depiction of reality is unknown to the author of this program.
